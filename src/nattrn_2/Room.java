@@ -22,4 +22,11 @@ public class Room {
     public String getRoomType() {
         return roomType;
     }
+
+    @Override
+    public String toString() {
+        return "Room " + roomNumber +
+                " | Beds: " + beds +
+                " | Type: " + roomType;
+    }
 }

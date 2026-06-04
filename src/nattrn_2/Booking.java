@@ -29,4 +29,12 @@ public class Booking {
     public LocalDate getCheckOut() {
         return checkOut;
     }
+
+    @Override
+    public String toString() {
+        return "Booking " + guest +
+                " | Room: " + room +
+                " | Check In: " + checkIn +
+                " | Check Out:" + checkOut;
+    }
 }
