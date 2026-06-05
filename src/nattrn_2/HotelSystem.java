@@ -201,23 +201,23 @@ public class HotelSystem {
         addRoom(110, 2, "double");
 
         // Bokningar (5 st)
-        createBooking(getCurrentUser(), rooms.get(0),
+        createBooking(users.get(1), rooms.get(0),
                 LocalDate.parse("2026-06-10"),
                 LocalDate.parse("2026-06-12"));
 
-        createBooking(getCurrentUser(), rooms.get(2),
-                LocalDate.parse("2026-06-11"),
-                LocalDate.parse("2026-06-13"));
+       createBooking(users.get(1), rooms.get(2),
+               LocalDate.parse("2026-06-11"),
+               LocalDate.parse("2026-06-13"));
 
-        createBooking(getCurrentUser(), rooms.get(4),
+        createBooking(users.get(2), rooms.get(4),
                 LocalDate.parse("2026-06-14"),
                 LocalDate.parse("2026-06-15"));
 
-        createBooking(getCurrentUser(), rooms.get(6),
+        createBooking(users.get(1), rooms.get(6),
                 LocalDate.parse("2026-06-16"),
                 LocalDate.parse("2026-06-18"));
 
-        createBooking(getCurrentUser(), rooms.get(8),
+        createBooking(users.get(2), rooms.get(8),
                 LocalDate.parse("2026-06-19"),
                 LocalDate.parse("2026-06-20"));
     }
